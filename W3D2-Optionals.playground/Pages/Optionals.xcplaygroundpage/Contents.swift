@@ -49,7 +49,7 @@ var convertedNum = Double(numberString) //convert numberString to a Double
 var inputString = "hello"
 // try to convert inputString to an Int here:
 
-
+var convertedinputsring = Int(inputString)
 //: If you've done everything right you should see "nil" along the right-hand gutter of the playground. This is what we use to represent "nothing". Only optional variables can have a value of `nil`.
 //:
 //: ## Challenge 2
@@ -60,8 +60,8 @@ var inputString = "hello"
 //:
 //: Then, change the string "1" to "🔥" and observe how the playground responds (or doesn't respond)
 
-var number = Int("1")
-// number + 1 // uncomment and fix this.
+var number = Int("10")
+ number! + 1 // uncomment and fix this.
 
 
 //: In general, force unwrapping is always a risk for a crash, and should be used sparingly and with caution.
@@ -90,7 +90,13 @@ if let unwrapped = number {
 
 var greeting: String? = "Aloha!"
 
+if let unwrappedgreeting = greeting {
+    print("\(unwrappedgreeting)")
+} else {
+    print ("There is no greeting")
+}
 
+greeting
 //: ## One last thing...
 //:
 //: Have a look at the following code:
